@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.cart {
+  filter: invert(100%);
+}
+.countItem {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  top: 8px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.countItem p {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 20px;
+  text-align: center;
+  align-content: center;
+  border-radius: 50%;
+  background-color: red;
+}
+@keyframes inside {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-8px);
+    opacity: 0.8;
+  }
+  60% {
+    transform: translateY(-12px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-16px);
+    opacity: 0;
+  }
+}
+
+.show {
+  display: block;
+  visibility: visible;
+  animation: inside 0.5s forwards;
+}
+.navbarContainer {
+  height: 100px;
+  align-content: center;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+  background-color: #020817;
+  z-index: 1;
+}
+.navbarContainer h5 {
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  font-family: "Anton", sans-serif;
+}
+.link {
+  color: #333;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  font-family: "Anton", sans-serif;
+}
+.link:hover {
+  color: #808fa7;
+}
+.logoUser {
+  filter: invert(100%);
+}
+/*Footer*/
+
+.footer {
+  width: 100%;
+  color: #414040;
+  padding: 20px 0;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footerColumn {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footerColumn h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerColumn ul li {
+  margin-bottom: 5px;
+}
+
+.footerColumn ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerSocial span {
+  color: #fff;
+}
